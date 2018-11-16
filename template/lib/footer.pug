@@ -1,0 +1,78 @@
+
+.section.fp-auto-height
+    .wk_footer_side
+        .wk_footer
+            | Copyright © 2016 
+            a(href='') Designed .
+            |   By 
+            a(href='javascript:;', title='Mars-IT All Rights Reserved') Mars-IT All Rights Reserved
+            a(title='Week Design By Haoweek.com') 技术支持:南宁火星人信息科技有限公司
+            br
+            | 备案号：
+            a(href='javascript:;', title='桂ICP备15003644号-2') 桂ICP备15003644号-2
+            a(href='javascript:if;', title='防水墙保卫网站远受侵害')
+                img(src='/public/images/footer/security.png')
+            a(href='javascript:if;', title='腾讯分析')
+                img(src='/public/images/footer/toss_11.gif')
+            span#tcss
+        
+.main-im
+    #open_im.open-im  
+    #im_main.im_main
+        #close_im.close-im
+            a(href='javascript:void(0);', title='在线QQ客服')  
+        a.im-qq.qq-a(href='' title='在线QQ客服')
+            .qq-container
+            .qq-hover-c
+                img.img-qq(src='hfour/images/footer/qq.png')
+            span QQ在线咨询
+        .im-tel
+            dt 售前咨询热线
+            dt.tel-num 0776-3216270
+            dt 售后服务热线
+            dt.tel-num 0776-3216270
+        .im-footer(style='position:relative')
+            .weixing-container
+                .weixing-show
+                    .weixing-txt
+                        | 微信扫一扫
+                        br
+                        | 关注周末设计
+                        br
+                        | 获取更多精彩风格
+                    img.weixing-ma(src='hfour/images/footer/mars-wechat.jpg')
+                    .weixing-sanjiao
+                    .weixing-sanjiao-big
+            .go-top
+                a(href='javascript:;', title='返回顶部')
+            div(style='clear:both')
+    #scrolltop
+        span(hidefocus='true')
+            a.scrolltopa(title='返回顶部', onclick="window.scrollTo('0','0')")
+                b 返回顶部
+    #discuz_tips(style='display:none;')
+
+
+block script
+    script.
+        FOM(function () {
+            FOM('#close_im').bind('click', function () {
+                FOM('#main-im').css("height", "0");
+                FOM('#im_main').hide();
+                FOM('#open_im').show();
+            });
+            FOM('#open_im').bind('click', function (e) {
+                FOM('#main-im').css("height", "272");
+                FOM('#im_main').show();
+                FOM(this).hide();
+            });
+            FOM('.go-top').bind('click', function () {
+                FOM(window).scrollTop(0);
+            });
+            FOM(".weixing-container").bind('mouseenter', function () {
+                FOM('.weixing-show').show();
+            })
+            FOM(".weixing-container").bind('mouseleave', function () {
+                FOM('.weixing-show').hide();
+            });
+        });
