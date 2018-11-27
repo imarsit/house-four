@@ -4,9 +4,9 @@
 
 
 
-inCludeScript("../hfour/javascripts/jquery.fullpage.min.js");
+inCludeScript("../public/javascripts/jquery.fullpage.min.js");
 
-inCludeScript("../hfour/javascripts/addons.js");
+inCludeScript("../public/javascripts/addons.js");
 
 
 
